@@ -14,7 +14,34 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-material-ui`,
+    {
+      resolve: `gatsby-plugin-scroll-indicator`,
+      options: {
+      // Configure color of the scroll indicator
+      color: '#663391',
+      // Height of the scroll indicator
+      height: '3px',
+      // Configure paths where the scroll indicator will appear
+      paths: ['/', '/projects/**'],
+      // Configure the z-index of the indicator element
+      zIndex: `9999`,
+      },
+    },
+    {
+      resolve: `gatsby-theme-material-ui`,
+      options: {
+        stylesConfig: {
+          disableAutoprefixing: true,
+          disableMinification: true
+        },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+    },
     `gatsby-plugin-sharp`,
+    `gatsby-background-image`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

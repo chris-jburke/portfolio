@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
+import StyledBackground from "../components/background"
 import Header from "./header"
 import "./layout.css"
 
@@ -26,20 +26,16 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
+        <footer style={{"marginTop":"-20px"}}>
+          <span style={{"color":"purple", "fontSize":".75em"}}>© {new Date().getFullYear()}, Built with</span> <a href="https://www.gatsbyjs.org"><span style={{"color":"purple", "fontSize":".8em"}}>Gatsby</span></a>
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <div style={{"marginTop":"-22px", "width":"100%","display":"flex","justifyContent":"flex-end"}}>
+          <div>
+          <span style={{"color":"purple", "fontSize":".8em"}}>Background vector created by alicia_mb - www.freepik.com</span>
+          </div>
+          </div>
         </footer>
-      </div>
     </>
   )
 }

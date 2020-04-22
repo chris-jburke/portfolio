@@ -13,10 +13,10 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Elmimg4 = () => {
+const Elmimg5 = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "elmprints-shopping-cart-1.png" }) {
+      placeholderImage: file(relativePath: { eq: "elmprints-shopping-cart-2.png" }) {
         childImageSharp {
           fixed(width:320) {
             ...GatsbyImageSharpFixed
@@ -29,4 +29,4 @@ const Elmimg4 = () => {
   return <Img fixed={data.placeholderImage.childImageSharp.fixed} />
 }
 
-export default Elmimg4
+export default Elmimg5

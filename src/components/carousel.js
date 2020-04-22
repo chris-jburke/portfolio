@@ -6,9 +6,10 @@ import Elmimg1 from './elmimg1'
 import Elmimg2 from './elmimg2'
 import Elmimg3 from './elmimg3'
 import Elmimg4 from './elmimg4'
+import Elmimg5 from './elmimg5'
 
 
-const steps = [<Elmimg1 />, <Elmimg2 />,<Elmimg3 />,<Elmimg4 />]
+const steps = [<Elmimg1 />, <Elmimg2 />,<Elmimg3 />,<Elmimg4 />,<Elmimg5 />]
 const useStyles = makeStyles((theme) => ({
 	root: {
 		maxWidth: 320,

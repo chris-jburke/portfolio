@@ -50,7 +50,7 @@ const ProjectsPage = () => (
     						<span style={{"color":"white"}}>MERN stack E-commerce application where users can buy posters/prints of movie posters and artwork. This is a decoupled app built using Node.js with Express, Mongodb and Mongoose, React with Typescript and Material-UI. Deployed on Heroku. </span>
     						<br />
     						<br />
-    						<span style={{"color":"white"}}>Link to Elm Prints: </span><a href="http://elmprints.herokuapp.com/">here</a>
+    						<span style={{"color":"white"}}>Link to Elm Prints: </span><a href="http://elmprints.herokuapp.com/" target="_blank" rel="noopener norefferrer">here</a>
     					</Typography>
     				</Grid>
     			</Grid>

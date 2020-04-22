@@ -7,7 +7,7 @@ import Marsimg2 from './marsimg2'
 import Marsimg3 from './marsimg3'
 
 
-const steps = [<Marsimg1 />, <Marsimg2 />,<Marsimg3 />]
+const steps = [<Marsimg1 />, <Marsimg2 />]
 const useStyles = makeStyles((theme) => ({
 	root: {
 		maxWidth: 320,

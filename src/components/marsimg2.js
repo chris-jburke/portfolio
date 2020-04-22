@@ -16,7 +16,7 @@ import Img from "gatsby-image"
 const Marsimg2 = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "mars-lots.png" }) {
+      placeholderImage: file(relativePath: { eq: "mars-lots-better.png" }) {
         childImageSharp {
           fixed(width:320) {
             ...GatsbyImageSharpFixed

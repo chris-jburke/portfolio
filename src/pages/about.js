@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import Image5 from "../components/image5"
 import StyledBackground from "../components/background"
 import {Box, Grid, Button, Container, Divider, Typography} from "@material-ui/core"
+import Resume from '../images/GA-Resume.pdf'
 
 const AboutPage = () => (
 	<Layout>
@@ -25,6 +26,8 @@ const AboutPage = () => (
     					<Typography variant="h2"><span style={{"color":"white"}}>About Me</span></Typography>
     				</div>
     			</Grid>
+          <Grid item xs={12}>
+          </Grid>
     			<Grid item xs={12}>
     				<Grid container>
     			    	<Grid style={{"textAlign":"center"}}item md={6} xs={12}>
@@ -37,6 +40,7 @@ const AboutPage = () => (
     						<Typography gutterBottom variant="body1" style={{"color":"white"}}>I have experience using Postgresql and MongoDB databases.</Typography>
     						<Typography gutterBottom variant="body1" style={{"color":"white"}}>I also have a Computer Science(B.S.) from University of Calfornia, Santa Cruz.</Typography>
     						<Typography gutterBottom variant="body1" style={{"color":"white"}}>I graduated with Honors and a culmulative GPA of 3.58.</Typography>
+                <Typography gutterBottom variant="body1" style={{"color":"white"}}>Download my resume: <a href={Resume} download>here</a></Typography>
     					</Grid>
     				</Grid>
     			</Grid>

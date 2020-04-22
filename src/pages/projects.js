@@ -6,14 +6,17 @@ import Image3 from "../components/image3"
 import Image4 from "../components/image4"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Carousel from "../components/carousel"
+import Marousel from "../components/marousel"
 import StyledBackground from "../components/background"
 import {Box, Grid, Button, Container, Divider, Typography} from "@material-ui/core"
+
 
 const ProjectsPage = () => (
 	<Layout>
   	<StyledBackground>
   	<SEO title="Project Page" />
-  	<Box style={{"width":"100%", "margin":"0 auto","height":"100vh", "overflow-y": "scroll","-webkit-overflow-scrolling": "touch"
+  	<Box style={{"width":"100%", "margin":"0 auto","height":"100vh", "overflow-y": "scroll","WebkitOverflowScrolling": "touch"
 }}>
    		<Grid
    			container
@@ -35,10 +38,11 @@ const ProjectsPage = () => (
     			<Grid
     				container
     				justify="center"
+                    spacing={2}
 
     			>
     				<Grid  style={{"display":"flex","justifyContent":"center"}} item lg={4} xs={12}>
-    					<Image />
+    					<Carousel />
     				</Grid>
     				<Grid style={{"display":"flex","justifyContent":"center","alignItems":"center"}}item lg={4} xs={12}>
     					<Typography variant="body1">
@@ -58,10 +62,11 @@ const ProjectsPage = () => (
     			<Grid
     				container
     				justify="center"
+                    spacing={2}
 
     			>
     				<Grid  style={{"display":"flex","justifyContent":"center"}} item lg={4} xs={12}>
-    					<Image2 />
+    					<Marousel />
     				</Grid>
     				<Grid style={{"display":"flex","justifyContent":"center","alignItems":"center"}}item lg={4} xs={12}>
     					<Typography variant="body1">
@@ -78,7 +83,7 @@ const ProjectsPage = () => (
     			<Grid
     				container
     				justify="center"
-
+                    spacing={2}
     			>
     				<Grid  style={{"display":"flex","justifyContent":"center"}} item lg={4} xs={12}>
     					<Image3 />
@@ -98,7 +103,7 @@ const ProjectsPage = () => (
                 <Grid
                     container
                     justify="center"
-
+                    spacing={2}
                 >
                     <Grid  style={{"display":"flex","justifyContent":"center"}} item lg={4} xs={12}>
                         <Image4 />
@@ -106,17 +111,13 @@ const ProjectsPage = () => (
                     <Grid style={{"display":"flex","justifyContent":"center","alignItems":"center"}}item lg={4} xs={12}>
                         <Typography variant="body1">
                             <h3 style={{"color":"white"}}>Checkers</h3>
-                            <span style={{"color":"white"}}>Checkers: Two player checkers game using vanilla Javascript, CSS, and HTML. Deployed on Github.</span>
-                            <br />
+                            <span style={{"color":"white"}}>This is a fully front-end web application where two players can play a game of American Checkers. Built using vanilla Javascript, CSS, and HTML. Deployed on Github.</span>
                             <br />
                             <span style={{"color":"white"}}>Link to Checkers: </span><a href="https://chris-jburke.github.io/project1-checkers/">here</a>
                         </Typography>
                     </Grid>
                 </Grid>
             </Grid>
-    		<Grid item xs={12}>
-    			<Link to="/">Go back to the homepage</Link>
-    		</Grid>
     	</Grid>
     </Box>
     </StyledBackground>

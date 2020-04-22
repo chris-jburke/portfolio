@@ -19,6 +19,7 @@ const LinkBehavior = React.forwardRef((props, ref) => (
     <Link ref={ref} to="/projects" {...props} />
 ))
 const IndexPage = () => (
+  <Layout>
   <StyledBackground>
   <Box style={{"width":"100%", "height":"100vh", "margin":"0 auto", "display":"flex","justifyContent":"center","alignContent":"center","alignItems":"center"}}>
   <SEO title="Home" />
@@ -36,7 +37,7 @@ const IndexPage = () => (
       <Typography variant="h2" style={{"margin":"0 5px", "color":"white"}}>Burke</Typography>
     </Grid>
     <Grid item xs={12}>
-      <Typography gutterBottom variant="body1" style={{"marginLeft":"15px", "color":"white"}}>I am a motivated recent Computer Science and General Assembly graduate who is highly proficient in solving front-end development problems using industry standard tools including React with Hooks, Javascript, Typescript, and Node.js. My passion for front-end development comes from my love of learning new tools and using those tools to actualize creative inspirations.</Typography>
+      <Typography gutterBottom variant="body1" style={{"marginLeft":"15px", "color":"white"}}>I am a motivated recent General Assembly and Computer Science (B.S.) graduate who is highly proficient in solving front-end development problems using industry standard tools including React with Hooks, Javascript, Typescript, and Node.js. My passion for front-end development comes from my love of learning new tools and using those tools to build awesome products.</Typography>
     </Grid>
     <Grid item xs={12}>
     
@@ -66,6 +67,7 @@ const IndexPage = () => (
   </Grid>
   </Box>
   </StyledBackground>
+  </Layout>
 
 )
 

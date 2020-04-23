@@ -7,23 +7,38 @@ import SEO from "../components/seo"
 import StyledBackground from "../components/background"
 import {blueGrey} from '@material-ui/core/colors'
 import {withStyles} from '@material-ui/core/styles'
-  const WhiteButton = withStyles(theme => ({
+const WhiteButton = withStyles(theme => ({
     root: {
         color: 'rgba(255,255,255,1)',
         borderColor: blueGrey[50],
         minHeight: "50px",
         minWidth: "200px",
       },
-  }))(Button)
-const LinkBehavior = React.forwardRef((props, ref) => (
+}))(Button)
+const LinkBehavior = React.forwardRef((props, ref) => {
+  const handleClick = (e) => {
+    e.preventDefault()
+  }
+  return(
     <Link ref={ref} to="/projects" {...props} />
-))
-const AboutBehavior = React.forwardRef((props, ref) => (
+  )
+})
+const AboutBehavior = React.forwardRef((props, ref) => {
+  const handleClick = (e) => {
+    e.preventDefault(e)
+  }
+  return (
     <Link ref={ref} to="/about" {...props} />
-))
-const ContactBehavior = React.forwardRef((props, ref) => (
+  )
+})
+const ContactBehavior = React.forwardRef((props, ref) => {
+  const handleClick = (e) => {
+    e.preventDefault(e)
+  }
+  return (
     <Link ref={ref} to="/contact" {...props} />
-))
+  )
+})
 const IndexPage = () => (
   <Layout>
   <StyledBackground>
@@ -68,7 +83,6 @@ const IndexPage = () => (
         </WhiteButton>
       </Grid>
     </Grid>
-
      </Grid>   
   </Grid>
   </Box>

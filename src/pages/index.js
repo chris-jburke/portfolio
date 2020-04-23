@@ -27,7 +27,7 @@ const ContactBehavior = React.forwardRef((props, ref) => (
 const IndexPage = () => (
   <Layout>
   <StyledBackground>
-  <Box style={{"width":"100%", "height":"90%", "paddingTop":"150px", "paddingBottom":"125px", "margin":"0 auto", "display":"flex","justifyContent":"center","alignContent":"center","alignItems":"center", "overflowY": "scroll","WebkitOverflowScrolling": "touch"}}>
+  <Box style={{"width":"100%", "height":"100%", "paddingTop":"175px", "paddingBottom":"175px", "margin":"0 auto", "display":"flex","justifyContent":"center","alignContent":"center","alignItems":"center", "overflowY": "scroll","WebkitOverflowScrolling": "touch"}}>
   <SEO title="Home" />
   <Grid
     container

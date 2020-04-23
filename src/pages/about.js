@@ -10,7 +10,7 @@ import Resume from '../images/GA-Resume.pdf'
 const AboutPage = () => (
 	<Layout>
   		<StyledBackground>
-  			<Box style={{"width":"100%", "height":"100vh", "margin":"0 auto", "display":"flex","justifyContent":"center","alignContent":"center","alignItems":"center"}}>
+  			<Box style={{"width":"100%", "height":"90%", "margin":"0 auto", "display":"flex","justifyContent":"center","alignContent":"center","alignItems":"center", "overflowY": "scroll","WebkitOverflowScrolling": "touch"}}>
   			<SEO title="Home" />
   			<Grid
    				container
@@ -18,7 +18,7 @@ const AboutPage = () => (
    				justify="center"
    				alignContent="center"
    				alignItems="center"
-   				style={{"backgroundColor":"rgba(26, 26, 24, 1)", "borderRadius":"10px", "maxWidth":"75vw", "margin":"5% auto"}}
+   				style={{"backgroundColor":"rgba(26, 26, 24,0)","maxWidth":"75vw", "minWidth":"320px", "margin":"5% auto"}}
    				spacing={3}
   			>
   				<Grid item xs={12}>

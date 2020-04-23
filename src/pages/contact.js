@@ -17,7 +17,7 @@ const ContactPage = () => (
    				justify="center"
    				alignContent="center"
    				alignItems="center"
-   				style={{"backgroundColor":"rgba(26, 26, 24, 1)", "borderRadius":"10px", "maxWidth":"75vw", "margin":"5% auto"}}
+   				style={{"backgroundColor":"rgba(26, 26, 24, 0)", "borderRadius":"10px", "maxWidth":"75vw", "margin":"5% auto"}}
    				spacing={3}
   			>
   				<Grid item xs={12}>
@@ -28,10 +28,10 @@ const ContactPage = () => (
     			<Grid item xs={12}>
           </Grid>
           <Grid item xs={12}>
-            <Typography gutterBottom variant="h4" style={{"color":"white"}}>Email: cjburke04@gmail.com</Typography>
-            <Typography gutterBottom variant="h4" style={{"color":"white"}}>LinkedIn: <a href="https://www.linkedin.com/in/christopher-james-burke/"target="_blank" rel="noopener norefferrer">here</a></Typography>
-            <Typography gutterBottom variant="h4" style={{"color":"white"}}>Github: <a href="https://github.com/chris-jburke"target="_blank" rel="noopener norefferrer">here</a></Typography>
-            <Typography gutterBottom variant="h4" style={{"color":"white"}}>Resume: <a href={Resume} download>here</a></Typography>
+            <Typography gutterBottom variant="h5" style={{"color":"white"}}>Email: cjburke04@gmail.com</Typography>
+            <Typography gutterBottom variant="h5" style={{"color":"white"}}>LinkedIn: <a href="https://www.linkedin.com/in/christopher-james-burke/"target="_blank" rel="noopener norefferrer">here</a></Typography>
+            <Typography gutterBottom variant="h5" style={{"color":"white"}}>Github: <a href="https://github.com/chris-jburke"target="_blank" rel="noopener norefferrer">here</a></Typography>
+            <Typography gutterBottom variant="h5" style={{"color":"white"}}>Resume: <a href={Resume} download>here</a></Typography>
           </Grid>
     		</Grid>
     		</Box>

@@ -40,6 +40,7 @@ const Background = ({ className, children }) => {
         title="Fullscreen Background"
         id="fullscreenbg"
         role="img"
+        alt="Background vector created by alicia_mb - www.freepik.com"
         aria-label="Fullscreen Background"
         preserveStackingContext={true}
       >

@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import StyledBackground from "../components/background"
 import Header from "./header"
 import "./layout.css"
+import {Box} from '@material-ui/core'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,16 +27,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-        <main>{children}</main>
-        <footer style={{"marginTop":"-20px"}}>
-          <span style={{"color":"purple", "fontSize":".75em"}}>© {new Date().getFullYear()}, Built with</span> <a href="https://www.gatsbyjs.org"><span style={{"color":"purple", "fontSize":".8em"}}>Gatsby</span></a>
-          {` `}
-          <div style={{"marginTop":"-22px", "width":"100%","display":"flex","justifyContent":"flex-end"}}>
-          <div>
-          <span style={{"color":"purple", "fontSize":".8em"}}>Background vector created by alicia_mb - www.freepik.com</span>
-          </div>
-          </div>
-        </footer>
+      <main>{children}</main>
     </>
   )
 }

@@ -10,20 +10,19 @@ import Carousel from "../components/carousel"
 import Marousel from "../components/marousel"
 import StyledBackground from "../components/background"
 import {Box, Grid, Button, Container, Divider, Typography} from "@material-ui/core"
-
+//"rgba(26, 26, 24, 1)"
 const ProjectsPage = () => (
 	<Layout>
   	<StyledBackground>
   	<SEO title="Project Page" />
-  	<Box style={{"width":"100%", "margin":"0 auto","height":"100vh", "overflow-y": "scroll","WebkitOverflowScrolling": "touch"
-}}>
+  	<Box style={{"margin":"0 auto", "width":"100%","height":"90%","overflowX":"hidden", "overflowY": "scroll","WebkitOverflowScrolling": "touch"}}>
    		<Grid
    			container
    			direction="column"
    			justify="center"
    			alignContent="center"
    			alignItems="center"
-   			style={{"backgroundColor":"rgba(26, 26, 24, 1)", "borderRadius":"10px", "maxWidth":"75vw", "margin":"5% auto"}}
+   			style={{"maxWidth":"90vw","minWidth":"320px", "margin":"0 auto"}}
    			spacing={3}
    		>
    			<Grid item xs={12}>

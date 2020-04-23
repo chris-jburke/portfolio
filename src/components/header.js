@@ -99,7 +99,7 @@ function NavTabs(){
 				>
 					<LinkTab label="Home" href="/" {...a11yProps(0)} />
 					<LinkTab label="Projects" href="/projects" {...a11yProps(1)} />
-					<LinkTab label="About Me" href="/about" {...a11yProps(2)} />
+					<LinkTab label="About" href="/about" {...a11yProps(2)} />
 					<LinkTab label="Contact" href="/contact" {...a11yProps(3)} />
 				</Tabs>
 			</AppBar>

@@ -14,7 +14,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-material-ui`,
     {
       resolve: `gatsby-plugin-scroll-indicator`,
       options: {

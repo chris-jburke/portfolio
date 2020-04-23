@@ -15,7 +15,7 @@ const ProjectsPage = () => (
 	<Layout>
   	<StyledBackground>
   	<SEO title="Project Page" />
-  	<Box style={{"margin":"0 auto", "width":"100%","height":"90%","overflowX":"hidden", "overflowY": "scroll","WebkitOverflowScrolling": "touch"}}>
+  	<Box style={{"margin":"0 auto", "width":"100%","height":"80%", "paddingBottom":"100px", "overflowX":"hidden", "overflowY": "scroll","WebkitOverflowScrolling": "touch"}}>
    		<Grid
    			container
    			direction="column"

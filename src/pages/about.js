@@ -10,7 +10,7 @@ import Resume from '../images/GA-Resume.pdf'
 const AboutPage = () => (
 	<Layout>
   		<StyledBackground>
-  			<Box style={{"width":"100%", "height":"90%", "margin":"0 auto", "display":"flex","justifyContent":"center","alignContent":"center","alignItems":"center", "overflowY": "scroll","WebkitOverflowScrolling": "touch"}}>
+  			<Box style={{"width":"100%", "paddingBottom":"100px","paddingTop":"100px", "height":"90%", "margin":"0 auto", "display":"flex","justifyContent":"center","alignContent":"center","alignItems":"center", "overflowY": "scroll","WebkitOverflowScrolling": "touch"}}>
   			<SEO title="Home" />
   			<Grid
    				container

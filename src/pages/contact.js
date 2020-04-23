@@ -9,7 +9,7 @@ import Resume from '../images/GA-Resume.pdf'
 const ContactPage = () => (
 	<Layout>
   		<StyledBackground>
-  			<Box style={{"width":"100%", "height":"100vh", "paddingBottom":"50px","margin":"0 auto", "display":"flex","justifyContent":"center","alignContent":"center","alignItems":"center"}}>
+  			<Box style={{"width":"100%", "height":"100vh", "paddingBottom":"100px","margin":"0 auto", "display":"flex","justifyContent":"center","alignContent":"center","alignItems":"center"}}>
   			<SEO title="Home" />
   			<Grid
    				container

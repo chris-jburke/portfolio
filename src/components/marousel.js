@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Marsimg1 from './marsimg1'
 import Marsimg2 from './marsimg2'
 import Marsimg3 from './marsimg3'
-
+import SwipeableViews from 'react-swipeable-views'
 
 const steps = [<Marsimg1 />, <Marsimg2 />]
 const useStyles = makeStyles((theme) => ({
@@ -49,9 +49,25 @@ export default function Marousel() {
 	const handleBack = () => {
 		setActiveStep((prevActiveStep) => prevActiveStep - 1)
 	}
+	const handleStepChange = (step) => {
+		setActiveStep(step)
+	}
 	return (
 		<div className={classes.root}>
-			{steps[activeStep]}
+			<SwipeableViews
+				axis={theme.direction === 'rtl' ? 'x-reverse':'x'}
+				index={activeStep}
+				onChangeIndex={handleStepChange}
+				enableMouseEvents
+			>
+			{
+				steps.map((step, index) => (
+					Math.abs(activeStep - index) <= 2 ? (
+						steps[activeStep]
+					) : (<div></div>)
+				))
+			}
+			</SwipeableViews>
 			<MobileStepper
 				style={{"marginTop":"-7px"}}
 				className={classes.header}

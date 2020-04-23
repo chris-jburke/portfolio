@@ -81,6 +81,9 @@ const useStyles = makeStyles((theme) => ({
 		flexGrow: 1,
 		backgroundColor: 'rgba(255,255,255,1)',
 	},
+	indicator:{
+		height: 0,
+	}
 }))
 function NavTabs(){
 	const classes = useStyles()
@@ -93,8 +96,10 @@ function NavTabs(){
 			<AppBar position="static" style={{"backgroundColor":"rgba(0,0,0,1)"}}>
 				<Tabs
 					variant="fullWidth"
+					classes={{indicator: classes.indicator}}
 					value={value}
 					onChange={handleChange}
+
 					aria-label="nav tabs portfolio"
 				>
 					<LinkTab label="Home" href="/" {...a11yProps(0)} />

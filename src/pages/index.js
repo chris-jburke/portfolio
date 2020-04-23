@@ -18,10 +18,16 @@ import {withStyles} from '@material-ui/core/styles'
 const LinkBehavior = React.forwardRef((props, ref) => (
     <Link ref={ref} to="/projects" {...props} />
 ))
+const AboutBehavior = React.forwardRef((props, ref) => (
+    <Link ref={ref} to="/about" {...props} />
+))
+const ContactBehavior = React.forwardRef((props, ref) => (
+    <Link ref={ref} to="/contact" {...props} />
+))
 const IndexPage = () => (
   <Layout>
   <StyledBackground>
-  <Box style={{"width":"100%", "height":"100vh", "paddingTop":"100px", "paddingBottom":"100px", "margin":"0 auto", "display":"flex","justifyContent":"center","alignContent":"center","alignItems":"center", "overflowY": "scroll","WebkitOverflowScrolling": "touch"}}>
+  <Box style={{"width":"100%", "height":"90%", "paddingTop":"150px", "paddingBottom":"125px", "margin":"0 auto", "display":"flex","justifyContent":"center","alignContent":"center","alignItems":"center", "overflowY": "scroll","WebkitOverflowScrolling": "touch"}}>
   <SEO title="Home" />
   <Grid
     container
@@ -52,12 +58,12 @@ const IndexPage = () => (
         </WhiteButton>
       </Grid>
       <Grid style={{"textAlign":"center","width":"100%"}} item md={4} xs={12}>
-        <WhiteButton variant="outlined" component={LinkBehavior}>
+        <WhiteButton variant="outlined" component={AboutBehavior}>
           About Me
         </WhiteButton>
       </Grid>
       <Grid item md={4} xs={12}>
-        <WhiteButton variant="outlined" component={LinkBehavior}>
+        <WhiteButton variant="outlined" component={ContactBehavior}>
           Contact
         </WhiteButton>
       </Grid>

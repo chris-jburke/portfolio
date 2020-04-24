@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, Redirect } from "gatsby"
+import { Link, navigate } from "gatsby"
 import {Box, Grid, Button, Container, Divider, Typography, useMediaQuery} from "@material-ui/core"
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -29,21 +29,15 @@ const IndexPage = () => {
   const smol = useMediaQuery('(max-width:375px')
   const handleProjectsClick = (e) => {
     e.preventDefault()
-    return (
-      <Redirect from="/" to="/projects" />
-    )
+    navigate("/projects")
   } 
   const handleAboutClick = (e) => {
     e.preventDefault()
-    return (
-      <Redirect from="/" to="/about" />
-    )
+    navigate("/about")
   }
   const handleContactClick = (e) => {
     e.preventDefault()
-    return(
-      <Redirect from="/" to="/contact" />
-    )
+    navigate("/contact")
   }
   return (
   <Layout>
@@ -57,7 +51,7 @@ const IndexPage = () => {
     alignContent="center"
     alignItems="center"
     spacing={3}
-    style={{"maxWidth":"75vw", "minWidth":"320px"}}
+    style={{"maxWidth":"75vw", "minWidth":"300px"}}
   >
     <Grid item xs={12} style={{"display":"flex","flexWrap":"wrap", "justifyContent":"center"}}>
       <Typography variant="h2" style={{"margin":"0 5px", "color":"white"}}>Christopher</Typography>

@@ -3,7 +3,7 @@ module.exports = {
     title: `Christopher Burke's Portfolio`,
     description: `This site showcases the projects worked on by me, Christopher Burke during my time at General Assembly`,
     author: `cjburke04@gmail.com`,
-    image: `./src/images/portfolio-preview.png`
+    image: `${__dirname}/src/images/portfolio-preview.png`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

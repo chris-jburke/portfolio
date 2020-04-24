@@ -4,7 +4,7 @@ module.exports = {
     description: `This site showcases the projects worked on by me, Christopher Burke during my time at General Assembly`,
     author: `cjburke04@gmail.com`,
     url: `https://christopherburke.netlify.app`,
-    image: `/portfolio-preview-best.jpg`,
+    image: `/static/portfolio-preview-best.jpg`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -49,14 +49,6 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
-          property: `image`,
-          content: `${site.siteMetadata.url}${site.siteMetadata.image}`,
-        },
-        {
-          property: `og:image`,
-          content: `${site.siteMetadata.url}${site.siteMetadata.image}`,
-        },
-        {
           property: `og:type`,
           content: `website`,
         },
@@ -81,7 +73,16 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
+      ]
+        .concat(
+          [
+            {
+              property:"og:image",
+              content: `${site.siteMetadata.url}${site.siteMetadata.image}`,
+            }
+
+          ]
+        ).concat(meta)}
     />
   )
 }
@@ -97,6 +98,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
 }
 
 export default SEO

@@ -4,6 +4,7 @@ import {Box, Grid, Button, Container, Divider, Typography, useMediaQuery} from "
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import Preview from "../components/preview"
 import StyledBackground from "../components/background"
 import {blueGrey} from '@material-ui/core/colors'
 import {withStyles} from '@material-ui/core/styles'
@@ -43,7 +44,7 @@ const IndexPage = () => {
   <Layout>
   <StyledBackground>
   <Box style={{"width":"100%", "height":"100vh", "paddingTop":"10%", "paddingBottom":"20%", "margin":"0 auto","overflowY": "scroll","WebkitOverflowScrolling": "touch"}}>
-  <SEO title="Home" />
+  <SEO title="Home" image={<Preview />} />
   <Grid
     container
     direction="column" 

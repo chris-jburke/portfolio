@@ -19,6 +19,8 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            url
+            image
           }
         }
       }
@@ -48,7 +50,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: `//i.imgur.com/WoKadd4.jpg`,
+          content: site.siteMetadata.image,
         },
         {
           property: `og:type`,
@@ -56,7 +58,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:url`,
-          content: `//christopherburke.netlify.app`
+          content: site.siteMetadata.url,
         },
 
         {

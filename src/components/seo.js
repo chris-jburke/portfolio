@@ -56,6 +56,11 @@ function SEO({ description, lang, meta, title }) {
           content: `website`,
         },
         {
+          property: `og:url`,
+          content: `//christopherburke.netlify.app`
+        },
+
+        {
           name: `twitter:card`,
           content: `summary`,
         },

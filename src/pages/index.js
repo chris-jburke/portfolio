@@ -118,30 +118,6 @@ const IndexPage = () => {
     <Grid item xs={12}>
       <Typography gutterBottom variant="body1" style={{"marginLeft":"15px", "color":"white"}}>I am a motivated recent General Assembly and Computer Science (B.S.) graduate who is highly proficient in solving front-end development problems using industry standard tools including React with Hooks, Javascript, Typescript, and Node.js. My passion for front-end development comes from my love of learning new tools and using those tools to build awesome products.</Typography>
     </Grid>
-    <Grid item xs={12}>
-    
-    <Grid
-      container
-      justify="space-around"
-      style={{"textAlign":"center","width":"100%", "marginBottom":"20px"}}
-    >
-      <Grid style={{"textAlign":"center","width":"100%"}} item md={4} xs={12} >
-        <WhiteButton variant="outlined" onClick={(e) => handleProjectsClick(e)}>
-          Projects
-        </WhiteButton>
-      </Grid>
-      <Grid style={{"textAlign":"center","width":"100%"}} item md={4} xs={12}>
-        <WhiteButton variant="outlined" onClick={(e) => handleAboutClick(e)}>
-          About Me
-        </WhiteButton>
-      </Grid>
-      <Grid item md={4} xs={12}>
-        <WhiteButton variant="outlined" onClick={(e) => handleContactClick(e)}>
-          Contact
-        </WhiteButton>
-      </Grid>
-    </Grid>
-     </Grid>   
   </Grid>
   </Box>
   </StyledBackground>

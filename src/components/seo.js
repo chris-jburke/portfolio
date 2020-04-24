@@ -19,6 +19,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            image
           }
         }
       }
@@ -48,7 +49,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: `//i.imgur.com/dd8fZ6Y.png`,
+          content: site.siteMetadata.image,
         },
         {
           property: `og:type`,

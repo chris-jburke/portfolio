@@ -48,7 +48,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: `https://imgur.com/a/ECTkvCT`,
+          content: `//i.imgur.com/dd8fZ6Y.png`,
         },
         {
           property: `og:type`,

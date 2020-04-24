@@ -42,7 +42,7 @@ const IndexPage = () => {
   return (
   <Layout>
   <StyledBackground>
-  <Box style={{"width":"100%", "height":"100vh", "paddingTop":"50%", "paddingBottom":"50%", "margin":"0 auto", "display":"flex","justifyContent":"center","alignContent":"center","alignItems":"center", "overflowY": "scroll","WebkitOverflowScrolling": "touch"}}>
+  <Box style={{"width":"100%", "height":"100vh", "paddingTop":"10%", "paddingBottom":"20%", "margin":"0 auto","overflowY": "scroll","WebkitOverflowScrolling": "touch"}}>
   <SEO title="Home" />
   <Grid
     container
@@ -51,7 +51,7 @@ const IndexPage = () => {
     alignContent="center"
     alignItems="center"
     spacing={3}
-    style={{"maxWidth":"75vw", "minWidth":"300px"}}
+    style={{"maxWidth":"75vw", "minWidth":"300px", "margin":"0 auto"}}
   >
     <Grid item xs={12} style={{"display":"flex","flexWrap":"wrap", "justifyContent":"center"}}>
       <Typography variant="h2" style={{"margin":"0 5px", "color":"white"}}>Christopher</Typography>
@@ -60,6 +60,11 @@ const IndexPage = () => {
     <Grid item xs={12} style={{"display":"flex","flexWrap":"wrap", "justifyContent":"center"}}>
       <Typography variant="h4" style={{"margin":"0 5px", "color":"white"}}>React</Typography>
       <Typography variant="h4" style={{"margin":"0 5px", "color":"white"}}>Developer</Typography>
+    </Grid>
+    <Grid item xs={12} style={{"display":"flex","flexWrap":"wrap", "justifyContent":"center"}}>
+      <Typography variant="h6" style={{"marginRight":"5px","color":"white"}}>Javascript, React.js, </Typography>
+      <Typography variant="h6" style={{"marginRight":"5px", "color":"white"}}>Python, Express.js, Node.js, </Typography>
+      <Typography variant="h6" style={{"color":"white"}}>CSS, Sequelize, MongoDB</Typography>
     </Grid>
     <Grid item xs={12}>
       <Typography gutterBottom variant="body1" style={{"marginLeft":"15px", "color":"white"}}>I am a motivated recent General Assembly and Computer Science (B.S.) graduate who is highly proficient in solving front-end development problems using industry standard tools including React with Hooks, Javascript, Typescript, and Node.js. My passion for front-end development comes from my love of learning new tools and using those tools to build awesome products.</Typography>

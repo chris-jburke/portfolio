@@ -40,6 +40,7 @@ const AboutPage = () => (
     					</Grid>
     					<Grid item md={6} xs={12}>
     						<Typography gutterBottom variant="h5" style={{"color":"white"}}>Christopher Burke</Typography>
+                <Typography gutterBottom variant="body1" style={{"color":"white"}}>Bellevue, WA</Typography>
     						<Typography gutterBottom variant="body1" style={{"color":"white"}}>Hi! I am a full stack developer who recently graduated from General Assembly.</Typography>
     						<Typography gutterBottom variant="body1" style={{"color":"white"}}>I specialize in React (with Hooks) front-ends as well as Express.js, Golang, and Python backends.</Typography>
     						<Typography gutterBottom variant="body1" style={{"color":"white"}}>I have experience using Postgresql and MongoDB databases.</Typography>

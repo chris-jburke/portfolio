@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import Image5 from "../components/image5"
 import StyledBackground from "../components/background"
 import {Box, Grid, Button, Container, Divider, Typography} from "@material-ui/core"
-import Resume from '../images/GA-Resume.pdf'
+import Resume from '../images/Resume-One-Page.pdf'
 import {blueGrey} from '@material-ui/core/colors'
 import {withStyles} from '@material-ui/core/styles'
 const WhiteButton = withStyles(theme => ({

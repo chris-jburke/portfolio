@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, Redirect } from "gatsby"
+import { Link, navigate } from "gatsby"
 import {Box, Grid, Button, Container, Divider, Typography, useMediaQuery} from "@material-ui/core"
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -29,21 +29,15 @@ const IndexPage = () => {
   const smol = useMediaQuery('(max-width:375px')
   const handleProjectsClick = (e) => {
     e.preventDefault()
-    return (
-      <Redirect from="/" to="/projects" />
-    )
+    navigate("/projects")
   } 
   const handleAboutClick = (e) => {
     e.preventDefault()
-    return (
-      <Redirect from="/" to="/about" />
-    )
+    navigate("/about")
   }
   const handleContactClick = (e) => {
     e.preventDefault()
-    return(
-      <Redirect from="/" to="/contact" />
-    )
+    navigate("/contact")
   }
   return (
   smol === false ? 
@@ -102,7 +96,7 @@ const IndexPage = () => {
   :
   <Layout>
   <StyledBackground>
-  <Box style={{"width":"100%", "height":"100vh", "paddingTop":"85%", "paddingBottom":"50%", "margin":"0 auto", "display":"flex","justifyContent":"center","alignContent":"center","alignItems":"center", "overflowY": "scroll","WebkitOverflowScrolling": "touch"}}>
+  <Box style={{"width":"100%", "height":"100vh", "paddingTop":"100%", "paddingBottom":"30%", "margin":"0 auto", "display":"flex","justifyContent":"center","alignContent":"center","alignItems":"center", "overflowY": "scroll","WebkitOverflowScrolling": "touch"}}>
   <SEO title="Home" />
   <Grid
     container

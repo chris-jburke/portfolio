@@ -19,7 +19,6 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
-            image
           }
         }
       }
@@ -49,7 +48,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: site.siteMetadata.image,
+          content: `//i.imgur.com/WoKadd4.jpg`,
         },
         {
           property: `og:type`,

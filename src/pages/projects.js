@@ -5,7 +5,6 @@ import Image2 from "../components/image2"
 import Image3 from "../components/image3"
 import Image4 from "../components/image4"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 import Carousel from "../components/carousel"
 import Marousel from "../components/marousel"
 import StyledBackground from "../components/background"
@@ -22,7 +21,6 @@ const WhiteButton = withStyles(theme => ({
 const ProjectsPage = () => (
 	<Layout>
   	<StyledBackground>
-  	<SEO title="Project Page" />
   	<Box style={{"margin":"0 auto", "width":"100%","height":"90%", "paddingBottom":"120px", "overflowX":"hidden", "overflowY": "scroll","WebkitOverflowScrolling": "touch"}}>
    		<Grid
    			container

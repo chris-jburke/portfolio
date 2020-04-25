@@ -43,7 +43,6 @@ const IndexPage = () => {
   <Layout>
   <StyledBackground>
   <Box style={{"width":"100%", "height":"100vh", "paddingTop":"10%", "paddingBottom":"20%", "margin":"0 auto","overflowY": "scroll","WebkitOverflowScrolling": "touch"}}>
-  <SEO title="Home" />
   <Grid
     container
     direction="column" 

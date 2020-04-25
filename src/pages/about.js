@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 import Image5 from "../components/image5"
 import StyledBackground from "../components/background"
 import {Box, Grid, Button, Container, Divider, Typography} from "@material-ui/core"
@@ -18,7 +17,6 @@ const AboutPage = () => (
 	<Layout>
   		<StyledBackground>
   			<Box style={{"width":"100%","height":"100vh", "paddingTop":"7%", "paddingBottom":"50px", "margin":"0 auto","overflowY": "scroll","WebkitOverflowScrolling": "touch"}}>
-  			<SEO title="Home" />
   			<Grid
    				container
    				direction="column"

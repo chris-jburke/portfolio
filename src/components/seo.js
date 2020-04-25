@@ -76,8 +76,13 @@ function SEO({ description, lang, meta, title}) {
           content: metaDescription,
         },
         {
-          property:"og:image",
-          content: "https://christopherburke.netlify.app/static/portfolio-preview-best-4d8bdf7dbc72c522d37ad67dddf424cf.jpg",
+          name: `image`,
+          content: `"https://christopherburke.netlify.app/static/portfolio-preview-best-4d8bdf7dbc72c522d37ad67dddf424cf.jpg"`
+        },
+
+        {
+          property:`og:image`,
+          content: `https://christopherburke.netlify.app/static/portfolio-preview-best-4d8bdf7dbc72c522d37ad67dddf424cf.jpg`,
         },
       ].concat(meta)}
     />

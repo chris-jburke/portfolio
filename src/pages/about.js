@@ -16,7 +16,7 @@ const WhiteButton = withStyles(theme => ({
 const AboutPage = () => (
 	<Layout>
   		<StyledBackground>
-  			<Box style={{"width":"100%","height":"100vh", "paddingTop":"7%", "paddingBottom":"50px", "margin":"0 auto","overflowY": "scroll","WebkitOverflowScrolling": "touch"}}>
+  			<Box style={{"width":"100%","height":"100vh", "paddingTop":"7%", "paddingBottom":"125px", "margin":"0 auto","overflowY": "scroll","WebkitOverflowScrolling": "touch"}}>
   			<Grid
    				container
    				direction="column"

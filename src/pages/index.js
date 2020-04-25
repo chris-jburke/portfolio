@@ -42,7 +42,7 @@ const IndexPage = () => {
   return (
   <Layout>
   <StyledBackground>
-  <Box style={{"width":"100%", "height":"100vh", "paddingTop":"10%", "paddingBottom":"20%", "margin":"0 auto","overflowY": "scroll","WebkitOverflowScrolling": "touch"}}>
+  <Box style={{"width":"100%", "height":"100vh", "paddingTop":"10%", "paddingBottom":"30%", "margin":"0 auto","overflowY": "scroll","WebkitOverflowScrolling": "touch"}}>
   <Grid
     container
     direction="column" 

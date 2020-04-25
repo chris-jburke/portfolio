@@ -28,6 +28,7 @@ function SEO({ description, lang, meta, title}) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const image = `${site.siteMetadata.url}${ogImg}`
   return (
     <Helmet
       htmlAttributes={{
@@ -78,7 +79,7 @@ function SEO({ description, lang, meta, title}) {
           [
             {
               property:"og:image",
-              content: ogImg,
+              content: image,
             },
           ]
         ).concat(meta)}

@@ -45,7 +45,6 @@ const LinkHome = React.forwardRef((props, ref) => (
 ))
 
 function LinkTab(props){
-	console.log(props)
 	if(props.href === "/projects") {
 		return (
 			<Tab

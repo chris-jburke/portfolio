@@ -29,6 +29,7 @@ function SEO({ description, lang, meta, title}) {
 
   const metaDescription = description || site.siteMetadata.description
   const image = `${site.siteMetadata.url}${ogImg}`
+  console.log(image)
   return (
     <Helmet
       htmlAttributes={{
@@ -79,7 +80,7 @@ function SEO({ description, lang, meta, title}) {
           [
             {
               property:"og:image",
-              content: image,
+              content: "https://christopherburke.netlify.app/static/portfolio-preview-best-4d8bdf7dbc72c522d37ad67dddf424cf.jpg",
             },
           ]
         ).concat(meta)}

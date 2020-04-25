@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import ogImg from '../images/portfolio-preview-best.jpg'
 
 function SEO({ description, lang, meta, title}) {
   const { site } = useStaticQuery(
@@ -22,20 +23,11 @@ function SEO({ description, lang, meta, title}) {
             url
           }
         }
-        placeholderImage: file(relativePath: { eq: "portfolio-preview-best.jpg" }) {
-          childImageSharp {
-            fixed(width: 1200) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
       }
     `
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const image = site.placeholderImage
-  const imageUrl = `${site.siteMetadata.url}${image}`
   return (
     <Helmet
       htmlAttributes={{
@@ -86,7 +78,7 @@ function SEO({ description, lang, meta, title}) {
           [
             {
               property:"og:image",
-              content: imageUrl,
+              content: ogImg,
             },
           ]
         ).concat(meta)}

@@ -59,9 +59,6 @@ const ProjectsPage = () => (
     			</Grid>
     		</Grid>
     		<Grid item xs={12}>
-    			<Divider />
-    		</Grid>
-    		<Grid item xs={12}>
     			<Grid
     				container
     				justify="center"

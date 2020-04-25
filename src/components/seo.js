@@ -56,7 +56,7 @@ function SEO({ description, lang, meta, title}) {
         },
         {
           property: `og:url`,
-          content: site.siteMetadata.url,
+          content: "https://christopherburke.netlify.app/",
         },
 
         {
@@ -75,15 +75,11 @@ function SEO({ description, lang, meta, title}) {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ]
-        .concat(
-          [
-            {
-              property:"og:image",
-              content: "https://christopherburke.netlify.app/static/portfolio-preview-best-4d8bdf7dbc72c522d37ad67dddf424cf.jpg",
-            },
-          ]
-        ).concat(meta)}
+        {
+          property:"og:image",
+          content: "https://christopherburke.netlify.app/static/portfolio-preview-best-4d8bdf7dbc72c522d37ad67dddf424cf.jpg",
+        },
+      ].concat(meta)}
     />
   )
 }
@@ -99,7 +95,6 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
-  url: PropTypes.string,
 }
 
 export default SEO

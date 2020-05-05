@@ -57,13 +57,13 @@ const IndexPage = () => {
       <Typography variant="h2" style={{"margin":"0 5px", "color":"white"}}>Burke</Typography>
     </Grid>
     <Grid item xs={12} style={{"display":"flex","flexWrap":"wrap", "justifyContent":"center"}}>
-      <Typography variant="h4" style={{"margin":"0 5px", "color":"white"}}>React</Typography>
-      <Typography variant="h4" style={{"margin":"0 5px", "color":"white"}}>Developer</Typography>
+      <Typography variant="h4" style={{"margin":"0 5px", "color":"white"}}>Full Stack</Typography>
+      <Typography variant="h4" style={{"margin":"0 5px", "color":"white"}}>Engineer</Typography>
     </Grid>
     <Grid item xs={12} style={{"display":"flex","flexWrap":"wrap", "justifyContent":"center"}}>
-      <Typography variant="h6" style={{"marginRight":"5px","color":"white"}}>Javascript, React.js, </Typography>
-      <Typography variant="h6" style={{"marginRight":"5px", "color":"white"}}>Python, Express.js, Node.js, </Typography>
-      <Typography variant="h6" style={{"color":"white"}}>CSS, Sequelize, MongoDB</Typography>
+      <Typography variant="h6" style={{"marginRight":"5px","color":"white"}}>Javascript, Typescript, Go, </Typography>
+      <Typography variant="h6" style={{"marginRight":"5px", "color":"white"}}>Python, React.js, Node.js, </Typography>
+      <Typography variant="h6" style={{"color":"white"}}>PostgresSQL, MongoDB</Typography>
     </Grid>
     <Grid item xs={12}>
       <Typography gutterBottom variant="body1" style={{"marginLeft":"15px", "color":"white"}}>I am a motivated recent General Assembly and Computer Science (B.S.) graduate who is highly proficient in solving front-end development problems using industry standard tools including React with Hooks, Javascript, Typescript, and Node.js. My passion for front-end development comes from my love of learning new tools and using those tools to build awesome products.</Typography>
